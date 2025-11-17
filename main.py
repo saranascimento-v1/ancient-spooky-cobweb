@@ -68,7 +68,7 @@ def criar_conta_corrente(base_clientes, numero_conta,conta):
         conta["numero_conta"].extend([numero_conta])
         print(f"\nConta criada com sucesso! Número da conta: {numero_conta}")
     else: 
-        print("Cadastre o seu usuário e tente cadastrar uma conta mais tarde")
+        print("Tente novamente mais tarde!")
 
     return conta, numero_conta
 
@@ -138,8 +138,6 @@ def main():
 
         elif opcao == "nc":
             contas, numero_conta = criar_conta_corrente(base_clientes, numero_conta,contas)
-            # if conta:
-            #     contas.append(conta)
 
         elif opcao == "q":
             print("Obrigado por utilizar nosso sistema! Até logo.")
